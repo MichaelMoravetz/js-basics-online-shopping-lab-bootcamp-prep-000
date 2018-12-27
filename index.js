@@ -64,12 +64,13 @@ function removeFromCart(item) {
         
         if ( getCart()[i].itemName === item ) {
           
-          return getCart().splice( i, 1 ) ;
-      
+           getCart().splice( i, 1 ) ;
+     
+      return getcart()
          } else {
        
      return 'That item is not in your cart.'
-     
+         }
   }
 }
 
