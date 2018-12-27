@@ -66,10 +66,9 @@ function removeFromCart(item) {
           
            return getCart().splice( i, 1 ) ;
     
-         } else
-       
+         } 
+      }
      return 'That item is not in your cart.'
-        
   }
 }
 
