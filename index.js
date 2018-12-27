@@ -26,6 +26,7 @@ function viewCart() {
   if (cart.length === 1) {
     return`In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}.`;
   }
+<<<<<<< HEAD
    else {
    
     var newString = "In your cart, you have "
@@ -45,11 +46,31 @@ function viewCart() {
 
 
 
+=======
+  
+  if (cart.length === 2) {
+    return `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}, and ${cart[1].itemName} at $${cart[1].itemPrice}.`;
+    
+   } else {
+    var newItemList = []
+    if ( getCart().length > 2 ) {
+    for ( var i = 0; i <= getCart().length-1; i++ ) {
+      
+    return `In your cart, you have ${newItemList.join(newItemList.push( `${ getCart()[0].itemName } at $${ getCart()[0].itemPrice }, ${ getCart()[1].itemName} at $${getCart()[1].itemPrice}, and ${ getCart()[i = getCart().length-1].itemName} at $${getCart()[i = getCart().length-1].itemPrice}.`))}`
+      } 
+   }    
+  }  
+}
+
+>>>>>>> 20e032c60807fdd196b26d5fc6848d7caad3eea9
   
 function total() {
 
     var totalPrice =  0;
+<<<<<<< HEAD
    
+=======
+>>>>>>> 20e032c60807fdd196b26d5fc6848d7caad3eea9
     for(var i = 0; i < getCart().length; i++) {                  
           totalPrice += getCart()[i].itemPrice ;
     }
@@ -57,6 +78,7 @@ function total() {
   }
 
 function removeFromCart(item) {
+<<<<<<< HEAD
     
      for (var i = 0; i < getCart().length; i++) {
         
@@ -69,8 +91,17 @@ function removeFromCart(item) {
       } 
           return 'That item is not in your cart.';
             
+=======
+    for (var i = 0; i > getCart().length; i++) {
+        if (getCart()[i].itemName === item) {
+            getCart().itemName.splice(i === )
+            return getCart()
+        } else {
+     return 'That item is not in your cart.'
+    }
+   }
+>>>>>>> 20e032c60807fdd196b26d5fc6848d7caad3eea9
 }
-
 function placeOrder(cardNumber) {
     
    var grandTotal = total()
