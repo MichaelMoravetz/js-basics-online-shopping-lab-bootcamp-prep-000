@@ -45,20 +45,6 @@ function viewCart() {
    
 }
 
-  if (cart.length === 2) {
-    return `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}, and ${cart[1].itemName} at $${cart[1].itemPrice}.`;
-    
-   } else {
-    var newItemList = []
-    if ( getCart().length > 2 ) {
-    for ( var i = 0; i <= getCart().length-1; i++ ) {
-      
-    return `In your cart, you have ${newItemList.join(newItemList.push( `${ getCart()[0].itemName } at $${ getCart()[0].itemPrice }, ${ getCart()[1].itemName} at $${getCart()[1].itemPrice}, and ${ getCart()[i = getCart().length-1].itemName} at $${getCart()[i = getCart().length-1].itemPrice}.`))}`
-      } 
-   }    
-  }  
-}
-
 
   
 function total() {
