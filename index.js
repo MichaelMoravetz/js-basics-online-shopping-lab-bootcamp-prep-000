@@ -68,7 +68,7 @@ function removeFromCart(item) {
            
           
         }
-      } 
+     // } 
         //  return 'That item is not in your cart.';
             
    // for (var i = 0; i > getCart().length; i++) {
@@ -79,6 +79,7 @@ function removeFromCart(item) {
         else {
      return 'That item is not in your cart.'
     }
+     }
   // }
 //}
 
