@@ -26,7 +26,7 @@ function viewCart() {
   if (cart.length === 1) {
     return`In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}.`;
   }
-<<<<<<< HEAD
+
    else {
    
     var newString = "In your cart, you have "
@@ -46,7 +46,7 @@ function viewCart() {
 
 
 
-=======
+
   
   if (cart.length === 2) {
     return `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}, and ${cart[1].itemName} at $${cart[1].itemPrice}.`;
@@ -62,7 +62,7 @@ function viewCart() {
   }  
 }
 
->>>>>>> 20e032c60807fdd196b26d5fc6848d7caad3eea9
+
   
 function total() {
 
