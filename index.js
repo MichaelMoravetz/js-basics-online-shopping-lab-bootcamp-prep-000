@@ -29,10 +29,11 @@ function viewCart() {
 
    else {
    
-    var newString = "In your cart, you have "
+    var newString = "In your cart, you have ";
       
     for ( var i = 0; i < getCart().length; i++ ) {
       if ( i != getCart().length-1 ) {
+     
       newString = newString + `${getCart()[i].itemName} at $${ getCart()[i].itemPrice}, `
       } else {
         newString = newString + `and ${getCart()[i].itemName} at $${ getCart()[i].itemPrice}.`
@@ -44,10 +45,6 @@ function viewCart() {
    
 }
 
-
-
-
-  
   if (cart.length === 2) {
     return `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}, and ${cart[1].itemName} at $${cart[1].itemPrice}.`;
     
@@ -67,10 +64,8 @@ function viewCart() {
 function total() {
 
     var totalPrice =  0;
-<<<<<<< HEAD
    
-=======
->>>>>>> 20e032c60807fdd196b26d5fc6848d7caad3eea9
+
     for(var i = 0; i < getCart().length; i++) {                  
           totalPrice += getCart()[i].itemPrice ;
     }
@@ -100,7 +95,6 @@ function removeFromCart(item) {
      return 'That item is not in your cart.'
     }
    }
->>>>>>> 20e032c60807fdd196b26d5fc6848d7caad3eea9
 }
 function placeOrder(cardNumber) {
     
